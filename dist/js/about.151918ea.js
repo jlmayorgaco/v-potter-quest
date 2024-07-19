@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkpotter_quest_pwa"]=self["webpackChunkpotter_quest_pwa"]||[]).push([[443],{364:function(t,e,n){n.r(e),n.d(e,{default:function(){return f}});var u=n(252);const a={class:"about"},r=(0,u._)("h1",null,"This is an about page",-1),s=[r];function c(t,e){return(0,u.wg)(),(0,u.iD)("div",a,s)}var o=n(744);const i={},p=(0,o.Z)(i,[["render",c]]);var f=p}}]);
+//# sourceMappingURL=about.151918ea.js.map
