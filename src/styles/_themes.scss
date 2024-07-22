@@ -1,0 +1,37 @@
+
+@import '../styles/colors';
+
+:host{
+    --color-white: #f7f7f7;
+    --l:50%;
+}
+
+.theme{
+    background-color: var(--color-main);
+    width: 100%;
+    height: calc(100% + 10em);
+    overflow: hidden;
+}
+.theme.theme__gryffindor{
+    --color-main: #{$color-gryffindor-red};
+    --color-secundary: #{$color-gryffindor-gold};
+    --color-main-darker: hsl(var(--color-main),calc(var(50%) - 10%));
+    --color-primary-darker: hsl(var(-color-main),calc(var(--l) - 10%));
+}
+.theme.theme__slytherin{
+    --color-main: #{$color-slytherin-green};
+    --color-secundary: #{$color-slytherin-silver};
+    --color-main-darker: hsl(var(--color-main),calc(var(50%) - 10%));
+}
+.theme.theme__hufflepuff{
+    --color-main: #{$color-hufflepuff-yellow};
+    --color-secundary: #{$color-hufflepuff-black};
+    --color-main-darker: hsl(var(--color-main),calc(var(50%) - 10%));
+}
+.theme.theme__ravenclaw{
+    --color-main: #{$color-ravenclaw-blue};
+    --color-secundary: #{$color-ravenclaw-bronze};
+    --color-main-darker: hsl(var(--color-main),calc(var(50%) - 10%));
+}
+
+
