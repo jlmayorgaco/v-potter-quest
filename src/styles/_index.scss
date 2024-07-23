@@ -1,0 +1,68 @@
+@import './reset';
+@import './colors';
+@import './themes';
+@import './view';
+@import './map';
+@import './sizes';
+@import './cards';
+@import './quests';
+
+
+html,
+body {
+  width: 100vw !important;
+  height: 100vh !important;
+  display: block !important;
+  overflow: hidden !important;
+  //background-image: url('https://wallpapers.com/images/high/starry-sky-minimalist-black-phone-c0mfik5m6phd9351.webp');
+}
+
+@font-face {
+  font-family: 'HarrySans';
+  src: url('@/assets/HARRYP.ttf') format('truetype');
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  padding-bottom: 5em;
+  width: 100vw;
+  height: calc(100vh);
+  overflow: hidden;
+
+  max-width: $size-max-w !important;
+  max-height: $size-max-h !important;
+  margin: 0 auto !important;
+}
+
+nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.scale-enter-active,
+.scale-leave-active {
+  transition: all 0.5s ease;
+}
+
+.scale-enter-from,
+.scale-leave-to {
+  opacity: 0;
+  transform: scale(0.9);
+}
